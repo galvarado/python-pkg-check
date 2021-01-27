@@ -3,14 +3,18 @@ Unit test to check if Python has all required packages.
 
 ## How t use it
 
-Place all your dependencies in the requirements.txt file that is in the root.
+Place your dependencies file in the requirements.txt file. You can obtaint it using pip:
+
+```
+$ pip list --format=freeze
+```
 
 
-To execute the tests, inside the test dir execute:
+To execute the tests, execute it as follows (inside the test directory):
 
 ```
 
-python3 -m unittest check_pkg
+$ python3 -m unittest check_pkg
 ```
 
 If the test finds out a missing package, you will see it as follows:
